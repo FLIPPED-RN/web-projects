@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake game | FLIPPED</title>
+</head>
+<body>
+    <div class="game">
+        <div class="name-of-game">
+            WB SNAKE GAME
+        </div>
+        <div class="score-container">
+            <div>Счет: <span id="current-score">0</span></div>
+            <div>Рекорд: <span id="high-score">0</span></div>
+        </div>
+        <canvas id="gameCanvas" width="420" height="420"></canvas>
+        <div id="game-over">
+            Вы проиграли!
+            <button id="restart-btn">Начать заново</button>
+            <button id="reset-btn">Сбросить</button>
+        </div>
+        <div class="game-version">
+            <p>V 1.0</p>
+            <p>by. FLIPPED</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
