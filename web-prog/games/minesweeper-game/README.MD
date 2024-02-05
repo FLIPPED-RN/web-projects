@@ -6,8 +6,8 @@
 2. Run the file "index.html"
 3. play the game
 
-![img.png](img.png)
-![img_1.png](img_1.png)
+![img.png](screenshots/img.png)
+![img_1.png](screenshots/img_1.png)
 
 <h2>How to enable cheats?</h2>
 1. Open the file "script.js"
@@ -15,4 +15,4 @@
 3. And set it to True instead of False
 4. play the game with cheats :)
 
-![img_2.png](img_2.png)
+![img_2.png](screenshots/img_2.png)
