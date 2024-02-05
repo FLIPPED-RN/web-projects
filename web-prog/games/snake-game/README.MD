@@ -1,8 +1,13 @@
 <h1>WB SNAKE GAME</h1>
 <p>by. FLIPPED</p>
-<p>V 1.0</p>
+<p>V 2.1</p>
 
 ![img.png](img.png)
+
+FIX 2.1
+1. New design black and white
+2. Fixed bags
+3. Add button Reset
 
 ----------------------------------------------------------------
 <h1>How to play? </h1>
