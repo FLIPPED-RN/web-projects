@@ -1,10 +1,10 @@
 const grid = document.getElementById("grid");
 let lockGame = false;
-// чтобы включить читы, поставьте true в значение
-const cheats = false;
+// to enable cheats, set true
+const cheats = true;
 generateGrid();
 
-// создание сетки 10 на 10
+// creating a 10 by 10 grid
 function generateGrid() {
     lockGame = false;
     grid.innerHTML = "";
@@ -24,7 +24,7 @@ function generateGrid() {
     generateMines();
 }
 
-// Generate mines randomly
+// generate mines randomly
 function generateMines() {
     // Add 20 mines to game
     for (let i = 0; i < 20; i++) {
@@ -38,7 +38,7 @@ function generateMines() {
     }
 }
 
-// Highlight all mines red
+// highlight all mines red
 function revealMines() {
     for (let i = 0; i < 10; i++) {
         for (let j = 0; j < 10; j++) {
@@ -66,7 +66,7 @@ function checkGameComplete() {
 }
 
 function init(cell) {
-    // Check game completed or no
+    // check game completed or no
     if (lockGame) {
         return;
     } else {
@@ -76,7 +76,7 @@ function init(cell) {
             lockGame = true;
         } else {
             cell.className = "active";
-            // Display number of mines around cell
+            // display number of mines around cell
             let mineCount = 0;
             let cellRow = cell.parentNode.rowIndex;
             let cellCol = cell.cellIndex;
