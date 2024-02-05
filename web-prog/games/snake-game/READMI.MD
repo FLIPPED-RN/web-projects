@@ -1,0 +1,12 @@
+<h1>WB SNAKE GAME</h1>
+<p>by. FLIPPED</p>
+<p>V 1.0</p>
+
+![img.png](img.png)
+
+----------------------------------------------------------------
+<h1>How to play? </h1>
+
+1. Clone this repository in your directory
+2. Run this project in Chrome
+3. Play the game ^^
