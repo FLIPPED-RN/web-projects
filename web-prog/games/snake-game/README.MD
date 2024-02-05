@@ -1,17 +1,12 @@
-<h1>WB SNAKE GAME</h1>
-<p>by. FLIPPED</p>
-<p>V 2.1</p>
+<h1>Hi, here are the projects for the "Games" section</h1>
+<h3>*All games working with Russian language, if you want play with English, you can write game on  :)*</h3>
 
-![img_1.png](screenshots/img_1.png)
 
-FIX 2.1
-1. New design black and white
-2. Fixed bags
-3. Add button Reset
-
-----------------------------------------------------------------
-<h1>How to play? </h1>
-
-1. Clone this repository in your directory
-2. Run this project in Chrome
-3. Play the game ^^
+1. WB SNAKE GAME
+![img.png](screenshots%2Fimg.png)
+![img_1.png](screenshots%2Fimg_1.png)
+-------------------
+2. MINESWEEPER GAME (Have a cheats :) )
+![img.png](..%2Fminesweeper-game%2Fscreenshots%2Fimg.png)
+![img_1.png](..%2Fminesweeper-game%2Fscreenshots%2Fimg_1.png)
+![img_2.png](..%2Fminesweeper-game%2Fscreenshots%2Fimg_2.png)
