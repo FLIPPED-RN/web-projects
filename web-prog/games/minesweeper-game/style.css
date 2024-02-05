@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Pixelify Sans', sans-serif;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 14pt;
+    font-weight: normal;
+}
+
+.heading-game{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reset-btn{
+    font-family: 'Pixelify Sans', sans-serif;
+    border: none;
+    height: 30px;
+    transition: all 0.3s ease-in;
+}
+
+.reset-btn:hover{
+    background-color: #9bff00;
+}
+
+#grid tr td{
+    border: 1px solid white;
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#grid tr td.active{
+    background-color: #333;
+}
+
+#grid tr td.mine{
+    background-color: red;
+}
+
+button{
+    margin-top: 12px;
+    cursor: pointer;
+}
