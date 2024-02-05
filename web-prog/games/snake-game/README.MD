@@ -2,7 +2,7 @@
 <p>by. FLIPPED</p>
 <p>V 2.1</p>
 
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 FIX 2.1
 1. New design black and white
