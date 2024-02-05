@@ -16,14 +16,14 @@ let highScore = localStorage.getItem('highScore') || 0;
 let currentScoreElem = document.getElementById('current-score');
 let highScoreElem = document.getElementById('high-score');
 
-//запуск игры
+//starting the game
 function initializeGame(){
-    //змея
+    //snake
     snake = [
         {x: Math.floor(canvas.width / 2 / GRID_SIZE) * GRID_SIZE, y: Math.floor(canvas.height / 2 / GRID_SIZE) * GRID_SIZE},
         {x: Math.floor(canvas.width / 2 / GRID_SIZE) * GRID_SIZE, y: (Math.floor(canvas.height / 2 / GRID_SIZE) + 1) * GRID_SIZE},
     ];
-    //еда
+    //food
     food = {
         ...generateFoodPosition(),
         dx: (Math.random() < 0.5 ? 1 : -1) * GRID_SIZE,
@@ -39,7 +39,7 @@ function initializeGame(){
 
 initializeGame();
 
-//настройка управления змеи
+//setting up the snake control
 document.addEventListener('keydown', function (event){
     switch (event.key){
         case 'ArrowUp':
@@ -69,7 +69,7 @@ document.addEventListener('keydown', function (event){
     }
 });
 
-// генерация позиции еды
+// generating a food position
 function generateFoodPosition(){
     while(true){
         let newFoodPosition = {
@@ -103,7 +103,7 @@ function checkCollision(){
     return false;
 }
 
-//обновление игры после паузы
+// updating the game after a pause
 function update(){
     if (gamePaused) return;
 
@@ -135,11 +135,11 @@ function update(){
             return;
         }
     }else{
-        snake.pop(); //возвращение размера змеи
+        snake.pop(); // the return of the snake's size
     }
 
     blinkCounter++;
-    draw(); // отрисовка объектов игры после обновления
+    draw(); // rendering game objects after the update
 }
 
 //отрисовка сетки
@@ -159,7 +159,7 @@ function drawGrid(){
     }
 }
 
-//отрисовка змеи и еды
+// drawing snakes and food
 function draw(){
     context.clearRect(0, 0, canvas.width, canvas.height);
     drawGrid();
@@ -171,7 +171,7 @@ function draw(){
     context.fillRect(food.x, food.y, FOOD_SIZE, FOOD_SIZE);
 }
 
-//сброс рекорда
+// reset the record
 function reset() {
     highScore = 0;
     score = 0;
@@ -191,7 +191,7 @@ function gameWin(){
     initializeGame();
 }
 
-//Рестарт
+// reset
 restartBtn.addEventListener('click', function () {
     gameOverScreen.style.display = 'none';
     gamePaused = false;
@@ -206,12 +206,12 @@ resetBtn.addEventListener('click', function () {
 
 setInterval(update, 50);
 
-//пауза игры
+// pause game
 window.addEventListener('blur', function (){
     gamePaused = true;
 });
 
-//возобовление игры
+// unpause game
 window.addEventListener('focus', function (){
     gamePaused = false;
     update();
