@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container .login-form .forms h1{
+    color: white;
+    letter-spacing: 0.4rem;
+    font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.container .login-form .login-img img{
+    height: 150px;
+    width: 330px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+
+.container .login-form{
+    background-color: black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.container .forms .custom-input input{
+    margin: 5px 20px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    padding: 0 15px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.container .forms .custom-input input:focus{
+    border: white;
+}
